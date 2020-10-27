@@ -2,7 +2,7 @@ let hour = document.getElementById("hour");
 let minute = document.getElementById("minute");
 let second = document.getElementById("second");
 let time = document.getElementById("show");
-let ap = "AM";
+let ap = " AM";
 
 setInterval(()=>{
     let d = new Date();
@@ -18,7 +18,7 @@ setInterval(()=>{
     minute.style.transform = `rotate(${MR}deg)`;
     second.style.transform = `rotate(${SR}deg)`;
 
-    ap = h>=12?"PM":"AM";
+    ap = h>=12?" PM":" AM";
     h = h%12;
     h = h?h:12;//when clock at 12
     h = ("0"+h).slice(-2);//h<10?"0"+h:h
