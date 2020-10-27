@@ -1,0 +1,79 @@
+.Clockcontainer::before{
+    content: '';
+    background: url('https://source.unsplash.com/1600x900/?nature,water');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+.Clockcontainer{
+    background: url(clock.jpg) no-repeat;
+    height: 350.391px;
+    width: 350.391px;
+    background-size: 100%;
+    margin: 20px auto;
+    position: relative;
+    margin-top: 120px;
+}
+#hour,#minute,#second{
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+    background: black;
+}
+.center{
+    border-radius: 50%;
+    width: 7%;
+    height: 7%;
+    position: absolute;
+    background: rgb(2, 2, 2);
+    top: 45.2%;
+    left: 47%;
+}
+#hour{
+    width: 1.9%;
+    height: 27.8%;
+    top: 21.8%;
+    left: 49.3%;
+    opacity: 0.9;
+}
+#minute{
+    width: 1.6%;
+    height: 31%;
+    top: 18.4%;
+    left: 49.49%;
+    opacity: 0.8;
+}
+#second{
+    width: 1.2%;
+    height: 35.55%;
+    top: 13.89%;
+    left: 49.777%;
+    opacity: 0.78;
+}
+#show{
+    margin: 25px auto;
+    width: fit-content;
+    padding: 10px 22px;
+    font-size: 32px;
+    color: white;
+    border-radius: 12px;
+    box-shadow: -18px 17px 67px 22px rgba(11,11,11,0.82) inset;
+-webkit-box-shadow: -18px 17px 67px 22px rgba(11,11,11,0.82) inset;
+-moz-box-shadow: -18px 17px 67px 22px rgba(11,11,11,0.82) inset;
+}
+
+@media only screen and (max-width:350px){
+    .Clockcontainer{
+        width: 80vw;
+        height: 80vw;
+    }
+    #show{
+        font-size: 20px;
+        padding: 8px;
+    }
+}
