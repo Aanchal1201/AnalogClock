@@ -4,6 +4,10 @@ let second = document.getElementById("second");
 let time = document.getElementById("show");
 let ap = " AM";
 
+window.onclick = function(){
+    document.querySelector("audio").play();
+};
+
 setInterval(()=>{
     let d = new Date();
     let h = d.getHours();
